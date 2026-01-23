@@ -4,7 +4,7 @@ This is a simple static website hosted using **GitHub Pages**.
 
 ## How to View
 Visit:
-https://yourusername.github.io
+https://chandruselvaraj.github.io
 
 ## Tech Used
 - HTML
