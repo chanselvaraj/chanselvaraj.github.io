@@ -1,4 +1,4 @@
-function sayHello() {
-  document.getElementById("msg").innerText =
-    "Thanks for visiting! 🚀";
+function sendMessage(event) {
+  event.preventDefault();
+  alert("Thanks for reaching out! I’ll get back to you soon.");
 }

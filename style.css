@@ -1,36 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f7fb;
-  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
 }
 
-header {
-  background: #2563eb;
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
-  padding: 2rem;
   text-align: center;
+  padding: 4rem 1rem;
 }
 
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-section {
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 20px;
   background: white;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  color: #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.gray {
+  background: #f3f4f6;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  text-align: center;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 120px;
 }
 
 button {
-  padding: 10px 16px;
   background: #2563eb;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -41,5 +105,11 @@ button:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #e5e7eb;
+  background: #111827;
+  color: #9ca3af;
+}
+
+.note {
+  text-align: center;
+  margin-top: 1rem;
 }

@@ -3,34 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
+  <title>Chandru Selvaraj</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Welcome 👋</h1>
-    <p>This site is hosted for FREE on GitHub Pages</p>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Chandru Selvaraj</h1>
+    <p>Software Engineer | Python | Data | Full Stack</p>
+    <a href="#contact" class="btn">Contact Me</a>
   </header>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        This is a simple static website.
-        Perfect for portfolios, landing pages, or course info.
-      </p>
-    </section>
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate software engineer with strong experience in Python,
+      backend development, and building scalable systems.
+      I enjoy solving real-world problems using clean, efficient code
+      and mentoring others through teaching and training.
+    </p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <button onclick="sayHello()">Click Me</button>
-      <p id="msg"></p>
-    </section>
-  </main>
+  <!-- SKILLS -->
+  <section class="section gray">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Python</div>
+      <div class="card">FastAPI / Django</div>
+      <div class="card">SQL / Databases</div>
+      <div class="card">Data Engineering</div>
+      <div class="card">ETL / Airflow</div>
+      <div class="card">Cloud & DevOps</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <h2>What I Do</h2>
+    <ul class="list">
+      <li>Design and build backend systems</li>
+      <li>Develop data pipelines and ETL workflows</li>
+      <li>Teach and mentor Python & Full Stack development</li>
+      <li>Create production-ready applications</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section gray">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="note">
+      Or connect with me on
+      <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank">
+        LinkedIn
+      </a>
+    </p>
+  </section>
 
   <footer>
-    <p>© 2026 Your Name</p>
+    <p>© 2026 Chandru Selvaraj</p>
   </footer>
 
   <script src="script.js"></script>
