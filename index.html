@@ -71,25 +71,52 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
-    <h2>Let’s Connect</h2>
+  <h2>Let’s Connect</h2>
 
-    <form onsubmit="handleSubmit(event)">
-      <div class="row">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-      </div>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <form
+    action="https://docs.google.com/forms/d/e/1FAIpQLSeARInYYkX32tboWOjIXJnEuF7aGbxxlkUeNnk34bEppCYWFw/formResponse"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="handleSubmit(event)"
+  >
+    <div class="row">
+      <input
+        type="text"
+        name="entry.1018281034"
+        placeholder="Your Name"
+        required
+      />
+      <input
+        type="text"
+        name="entry.1601816784"
+        placeholder="Contact (Email / Phone)"
+        required
+      />
+    </div>
 
-    <p class="contact-note">
-      Or reach me directly on
-      <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank">
-        LinkedIn
-      </a>
-    </p>
-  </section>
+    <input
+      type="text"
+      name="entry.266113226"
+      placeholder="Organization (optional)"
+    />
 
+    <textarea
+      name="entry.2118176158"
+      placeholder="Your Message"
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <p class="contact-note">
+    Or reach me directly on
+    <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank">
+      LinkedIn
+    </a>
+  </p>
+    </section>
   <footer>
     © 2026 Chandru Selvaraj
   </footer>
