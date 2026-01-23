@@ -5,64 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chandru Selvaraj</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- HERO -->
-  <header class="hero">
-    <h1>Chandru Selvaraj</h1>
-    <p>Software Engineer | Python | Data | Full Stack</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Chandru Selvaraj" class="profile-pic" />
+
+      <h1>Chandru Selvaraj</h1>
+      <p class="subtitle">
+        Senior Software Engineer • Python • Data • Full Stack
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="primary-btn">Contact Me</a>
+        <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank" class="secondary-btn">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- ABOUT -->
   <section class="section">
     <h2>About Me</h2>
-    <p>
-      I am a passionate software engineer with strong experience in Python,
-      backend development, and building scalable systems.
-      I enjoy solving real-world problems using clean, efficient code
-      and mentoring others through teaching and training.
+    <p class="lead">
+      I am a software engineer focused on building scalable backend systems,
+      data platforms, and real-world production applications.
+      I enjoy solving complex problems, designing clean architectures,
+      and mentoring engineers and students.
     </p>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section gray">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">Python</div>
-      <div class="card">FastAPI / Django</div>
-      <div class="card">SQL / Databases</div>
-      <div class="card">Data Engineering</div>
-      <div class="card">ETL / Airflow</div>
-      <div class="card">Cloud & DevOps</div>
+  <!-- EXPERTISE -->
+  <section class="section alt">
+    <h2>Expertise</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Backend Engineering</h3>
+        <p>Python, FastAPI, Django, REST APIs, system design.</p>
+      </div>
+
+      <div class="card">
+        <h3>Data & ETL</h3>
+        <p>SQL, Airflow, pipelines, analytics, performance tuning.</p>
+      </div>
+
+      <div class="card">
+        <h3>Full Stack</h3>
+        <p>End-to-end application development with clean UI & UX.</p>
+      </div>
+
+      <div class="card">
+        <h3>Teaching & Mentorship</h3>
+        <p>Training students and professionals in Python & engineering.</p>
+      </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section">
-    <h2>What I Do</h2>
-    <ul class="list">
-      <li>Design and build backend systems</li>
-      <li>Develop data pipelines and ETL workflows</li>
-      <li>Teach and mentor Python & Full Stack development</li>
-      <li>Create production-ready applications</li>
-    </ul>
-  </section>
-
   <!-- CONTACT -->
-  <section id="contact" class="section gray">
-    <h2>Contact Me</h2>
+  <section id="contact" class="section contact">
+    <h2>Let’s Connect</h2>
 
-    <form onsubmit="sendMessage(event)">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
+    <form onsubmit="handleSubmit(event)">
+      <div class="row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+      </div>
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
 
-    <p class="note">
-      Or connect with me on
+    <p class="contact-note">
+      Or reach me directly on
       <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank">
         LinkedIn
       </a>
@@ -70,7 +88,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Chandru Selvaraj</p>
+    © 2026 Chandru Selvaraj
   </footer>
 
   <script src="script.js"></script>
