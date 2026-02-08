@@ -17,6 +17,21 @@ body {
   color: var(--text);
 }
 
+#typewriter {
+  border-right: 3px solid var(--accent-blue);
+  white-space: nowrap;
+}
+
+/* This keeps the cursor blinking even when no text is present */
+.cursor-blink {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--accent-blue); }
+}
+
 /* HERO */
 .hero {
   min-height: 100vh;

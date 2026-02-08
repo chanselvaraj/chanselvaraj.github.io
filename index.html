@@ -3,122 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chandru Selvaraj</title>
+  <title>KovaiLabs | Elite Offshore Engineering</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Inline overrides to ensure the new professional look without breaking your style.css hooks */
+    :root {
+      --bg-dark: #0a0c10;
+      --card-bg: #161b22;
+      --accent-blue: #2f81f7;
+      --text-main: #f0f6fc;
+      --text-dim: #8b949e;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      margin: 0;
+    }
+    .section { padding: 80px 10%; }
+    .hero { background: radial-gradient(circle at top right, #1d2b41, #0a0c10); border-bottom: 1px solid #30363d; }
+    .card { background: var(--card-bg); border: 1px solid #30363d; border-radius: 12px; transition: 0.3s; }
+    .card:hover { border-color: var(--accent-blue); transform: translateY(-5px); }
+    .primary-btn { background: var(--accent-blue); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    input, textarea { background: #0d1117; border: 1px solid #30363d; color: white; padding: 12px; border-radius: 6px; margin-bottom: 15px; width: 100%; }
+    h1, h2, h3 { color: #ffffff; letter-spacing: -0.02em; }
+  </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="pic.png" alt="Chandru Selvaraj" class="profile-pic" />
-
-      <h1>Chandru Selvaraj</h1>
-      <p class="subtitle">
-        Software Engineering • Python • Data • Full Stack
-      </p>
-
-      <div class="hero-actions">
-        <a href="#contact" class="primary-btn">Contact Me</a>
-        <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank" class="secondary-btn">
-          LinkedIn
-        </a>
-          <a href="https://www.youtube.com/@chandruselvaraj313/videos" target="_blank" class="secondary-btn">
-          video tutorials
-        </a>
-      </div>
+  <nav style="display: flex; justify-content: space-between; padding: 20px 10%; align-items: center; border-bottom: 1px solid #30363d; background: rgba(10, 12, 16, 0.8); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
+    <div style="font-weight: 800; font-size: 1.4rem;">Kovai<span style="color: var(--accent-blue);">Labs</span></div>
+    <div style="display: flex; gap: 25px; font-size: 0.9rem;">
+      <a href="#expertise" style="color: var(--text-dim); text-decoration: none;">Expertise</a>
+      <a href="#leadership" style="color: var(--text-dim); text-decoration: none;">Leadership</a>
+      <a href="#contact" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Hire Talent</a>
+      <a href="#contact" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Train your team</a>
     </div>
-  </section>
+  </nav>
 
-  <!-- ABOUT -->
-  <section class="section">
-    <h2>About Me</h2>
-    <p class="lead">
-      I’m a software engineer with strong skills in Python, C#, SQL, PySpark, AWS , Azure and Linux.
-        passionate about building and teaching innovative software solutions.
-        On this blog, I share my knowledge, tips, and tutorials to help aspiring developers learn how to create robust applications, understand programming concepts, and build real-world projects.
-        My goal is to make software development approachable, practical, and fun, whether you’re just starting out or looking to level up your skills.
+  <section class="hero" style="text-align: center; padding: 150px 5% 100px; background: radial-gradient(circle at center, #161b22 0%, #0a0c10 100%);">
+  <div style="max-width: 1100px; margin: 0 auto;">
+
+    <div style="display: inline-block; padding: 6px 16px; background: rgba(47, 129, 247, 0.1); color: var(--accent-blue); border: 1px solid rgba(47, 129, 247, 0.3); border-radius: 100px; font-size: 0.85rem; font-weight: 600; margin-bottom: 30px; letter-spacing: 1px;">
+      WORLD-CLASS OFFSHORE ENGINEERING
+    </div>
+
+      <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.2; margin-bottom: 30px; font-weight: 800; letter-spacing: -0.04em; text-align: center;">
+      <span id="typewriter" style="color: var(--accent-blue); display: inline-block; min-width: 140px; min-height: 1.2em; text-align: left; vertical-align: bottom;">Build </span>
+      <span>your software Engineering team in India.</span>
+    </h1>
+
+    <p style="color: var(--text-dim); font-size: clamp(1.1rem, 2vw, 1.4rem); max-width: 900px; margin: 0 auto 50px; line-height: 1.6;">
+      Expand your technical team with developers specializing in Python, Big Data, and Cloud Architecture—integrated seamlessly into your workflow.
     </p>
+
+    <div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+      <a href="#contact" class="primary-btn" style="padding: 16px 40px; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(47, 129, 247, 0.2);">
+        Start Hiring Now
+      </a>
+      <a href="#expertise" style="color: white; border: 1px solid #30363d; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.borderColor='#8b949e'" onmouseout="this.style.borderColor='#30363d'">
+        Explore Expertise
+      </a>
+    </div>
+
+  </div>
   </section>
 
-  <!-- EXPERTISE -->
-  <section class="section alt">
-    <h2>Expertise</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Backend Engineering</h3>
-        <p>Python, FastAPI, Django, REST APIs, system design.</p>
+  <section id="expertise" class="section">
+    <h2 style="text-align: center; margin-bottom: 50px;">Our Specialized Units</h2>
+    <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      <div class="card" style="padding: 30px;">
+        <h3 style="color: var(--accent-blue);">Digital Transformation</h3>
+        <p style="color: var(--text-dim);">End-to-end digital journey covering legacy modernization, system redesign, application development, and seamless integration—driving measurable business outcomes through technology.</p>
       </div>
-
-      <div class="card">
-        <h3>Data & ETL</h3>
-        <p>SQL, Airflow, pipelines, analytics, performance tuning.</p>
+      <div class="card" style="padding: 30px;">
+        <h3 style="color: var(--accent-blue);">AI first development</h3>
+        <p style="color: var(--text-dim);">Design and development of intelligent applications using Python, Java, and C#, including data-driven systems, automation, and AI-enabled workflows tailored to business needs.</p>
       </div>
-
-      <div class="card">
-        <h3>Full Stack</h3>
-        <p>End-to-end application development with clean UI & UX.</p>
-      </div>
-
-      <div class="card">
-        <h3>Teaching & Mentorship</h3>
-        <p>Training students and professionals in Python & engineering.</p>
+      <div class="card" style="padding: 30px;">
+        <h3 style="color: var(--accent-blue);">Cloud Engineering</h3>
+        <p style="color: var(--text-dim);">Cloud-first engineering services covering architecture, migration, and optimization on AWS, Azure, and Google Cloud Platform, ensuring scalability, security, and operational efficiency.</p>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-  <h2>Let’s Connect</h2>
-
-  <form
-    action="https://docs.google.com/forms/d/e/1FAIpQLSeARInYYkX32tboWOjIXJnEuF7aGbxxlkUeNnk34bEppCYWFw/formResponse"
-    method="POST"
-    target="hidden_iframe"
-    onsubmit="handleSubmit(event)"
-  >
-    <div class="row">
-      <input
-        type="text"
-        name="entry.1018281034"
-        placeholder="Your Name"
-        required
-      />
-      <input
-        type="text"
-        name="entry.1601816784"
-        placeholder="Contact (Email / Phone)"
-        required
-      />
+  <section id="leadership" class="section" style="background: #0d1117; border-top: 1px solid #30363d; border-bottom: 1px solid #30363d;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+      <div>
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">The Team</h2>
+        <h3 style="color: var(--accent-blue); margin-bottom: 20px;">Selvaraj — CTO</h3>
+        <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 25px;">
+          With a deep background in Full-Stack Engineering and Data Systems, Selvaraj founded KovaiLabs to bridge the gap between global demand and India's top-tier talent. Under his leadership, we ensure that every engineer we place is not just a coder, but a strategic partner for your business.
+        </p>
+        <div style="display: flex; gap: 20px;">
+          <div style="border-left: 2px solid var(--accent-blue); padding-left: 15px;">
+            <h4 style="margin: 0;">10+ Years</h4>
+            <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Engineering Experience</p>
+          </div>
+          <div style="border-left: 2px solid var(--accent-blue); padding-left: 15px;">
+            <h4 style="margin: 0;">Vetted Talent</h4>
+            <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Strict Quality Bar</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <input
-      type="text"
-      name="entry.266113226"
-      placeholder="Organization (optional)"
-    />
+  <section id="contact" class="section" style="text-align: center;">
+    <div style="max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 50px; border-radius: 20px; border: 1px solid #30363d;">
+      <h2>Scale Your Operations</h2>
+      <p style="color: var(--text-dim); margin-bottom: 30px;">Submit your requirements and our team will get back to you within 24 hours.</p>
 
-    <textarea
-      name="entry.2118176158"
-      placeholder="Your Message"
-    ></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeARInYYkX32tboWOjIXJnEuF7aGbxxlkUeNnk34bEppCYWFw/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="handleSubmit(event)"
+      >
+        <input type="text" name="entry.1018281034" placeholder="Your Full Name" required />
+        <input type="text" name="entry.1601816784" placeholder="Corporate Email" required />
+        <textarea name="entry.2118176158" placeholder="Tell us about the roles you need to fill..."></textarea>
+        <button type="submit" class="primary-btn" style="width: 100%; border: none; cursor: pointer; padding: 15px;">Inquire Now</button>
+      </form>
+    </div>
+  </section>
 
   <iframe name="hidden_iframe" style="display:none;"></iframe>
 
-  <p class="contact-note">
-    Or reach me directly on
-    <a href="https://www.linkedin.com/in/chandruselvaraj/" target="_blank">
-      LinkedIn
-    </a>
-  </p>
-    </section>
-  <footer>
-    © 2026 Chandru Selvaraj
+  <footer style="padding: 40px; text-align: center; color: var(--text-dim); font-size: 0.8rem; border-top: 1px solid #30363d;">
+    © 2026 KovaiLabs Engineering. All Rights Reserved.
   </footer>
 
   <script src="script.js"></script>
