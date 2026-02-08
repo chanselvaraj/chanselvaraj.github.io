@@ -46,4 +46,41 @@ setTimeout(type, typeSpeed);
 
 document.addEventListener("DOMContentLoaded", type);
 
+let currentLeaderIndex = 0;
+const track = document.getElementById('leader-track');
+const dots = document.querySelectorAll('.dot');
+const totalLeaders = 3;
+
+let autoSlideInterval;
+
+function moveSlide(index) {
+  currentLeaderIndex = index;
+
+  // Move the track
+  track.style.transform = `translateX(-${index * 100}%)`;
+
+  // Update dots
+  dots.forEach((dot, i) => {
+    dot.style.background = (i === index) ? 'var(--accent-blue)' : '#30363d';
+    dot.style.opacity = (i === index) ? '1' : '0.5';
+  });
+}
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    currentLeaderIndex = (currentLeaderIndex + 1) % totalLeaders;
+    moveSlide(currentLeaderIndex);
+  }, 5000);
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Start auto-slide initially
+startAutoSlide();
+
+// Pause on hover (hover the whole slider box)
+track.addEventListener('mouseenter', stopAutoSlide);
+track.addEventListener('mouseleave', startAutoSlide);
 

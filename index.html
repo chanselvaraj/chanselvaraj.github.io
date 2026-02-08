@@ -37,7 +37,7 @@
     <div style="display: flex; gap: 25px; font-size: 0.9rem;">
       <a href="#expertise" style="color: var(--text-dim); text-decoration: none;">Expertise</a>
       <a href="#leadership" style="color: var(--text-dim); text-decoration: none;">Leadership</a>
-      <a href="#contact" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Hire Talent</a>
+<!--      <a href="#contact" style="color: var(&#45;&#45;accent-blue); text-decoration: none; font-weight: 600;">Hire Talent</a>-->
       <a href="#contact" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Train your team</a>
     </div>
   </nav>
@@ -51,7 +51,7 @@
 
     <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.2; margin-bottom: 30px; font-weight: 800; letter-spacing: -0.04em; text-align: center;">
       <span id="typewriter" style="color: var(--accent-blue); display: inline-block; min-width: 140px; text-align: left; vertical-align: bottom; padding-left: 8px;">Build</span>
-      <span>your software Engineering teams in India.</span>
+      <span>your software Engineering team in India.</span>
     </h1>
 
     <p style="color: var(--text-dim); font-size: clamp(1.1rem, 2vw, 1.4rem); max-width: 900px; margin: 0 auto 50px; line-height: 1.6;">
@@ -88,27 +88,95 @@
     </div>
   </section>
 
-  <section id="leadership" class="section" style="background: #0d1117; border-top: 1px solid #30363d; border-bottom: 1px solid #30363d;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
-      <div>
-        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">The Team</h2>
-        <h3 style="color: var(--accent-blue); margin-bottom: 20px;">Selvaraj — CTO</h3>
-        <p style="color: var(--text-dim); line-height: 1.8; margin-bottom: 25px;">
-          With a deep background in Full-Stack Engineering and Data Systems, Selvaraj founded KovaiLabs to bridge the gap between global demand and India's top-tier talent. Under his leadership, we ensure that every engineer we place is not just a coder, but a strategic partner for your business.
-        </p>
-        <div style="display: flex; gap: 20px;">
-          <div style="border-left: 2px solid var(--accent-blue); padding-left: 15px;">
-            <h4 style="margin: 0;">10+ Years</h4>
-            <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Engineering Experience</p>
-          </div>
-          <div style="border-left: 2px solid var(--accent-blue); padding-left: 15px;">
-            <h4 style="margin: 0;">Vetted Talent</h4>
-            <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Strict Quality Bar</p>
-          </div>
+  <section id="leadership" class="section" style="background: #0d1117; position: relative; overflow: hidden; padding-top: 100px; padding-bottom: 100px;">
+
+  <div style="position: absolute; top: 0; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-blue), transparent); opacity: 0.5;"></div>
+  <div style="position: absolute; bottom: 0; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-blue), transparent); opacity: 0.5;"></div>
+
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(47, 129, 247, 0.05) 0%, transparent 70%); pointer-events: none;"></div>
+
+  <div style="text-align: center; margin-bottom: 40px; position: relative; z-index: 1;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 10px;">The Team</h2>
+    <div style="width: 40px; height: 2px; background: var(--accent-blue); margin: 0 auto;"></div>
+  </div>
+
+  <div class="slider-container" style="max-width: 800px; margin: 0 auto; position: relative; z-index: 1;">
+    <div id="leader-track" style="display: flex; transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;">
+
+      <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
+        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Selvaraj</h3>
+           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Founder & CTO</p>
+           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
+             With deep expertise in full-stack engineering, data systems, and large-scale digital transformation, Selvaraj founded KovaiLabs to bridge global technology needs with India’s elite talent. Leveraging hands-on leadership across AWS, Azure, GCP, and Python/.NET ecosystems, he drives architecture, delivery excellence, and ensures every engagement creates long-term strategic value for clients.
+           </p>
+           <div style="display: flex; gap: 30px;">
+             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
+               <h4 style="margin: 0; font-size: 1.2rem;">10+ Years</h4>
+               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Engineering Leadership</p>
+             </div>
+           </div>
         </div>
       </div>
+
+      <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
+        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px;">
+           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Anand Pulakala</h3>
+           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Product Engineering Head</p>
+           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
+             Golang backend expert building mission-critical microservices and cloud-native platforms at scale, Focused on performance, reliability, and systems that power real business outcomes.
+           </p>
+           <div style="display: flex; gap: 30px;">
+             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
+               <h4 style="margin: 0; font-size: 1.2rem;">9+ Years</h4>
+               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">System Architecture</p>
+             </div>
+           </div>
+        </div>
+      </div>
+
+        <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
+        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px;">
+           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Rohit</h3>
+           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Cyber security expert</p>
+           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
+             Backed by 7+ years of experience in penetration testing and cybersecurity consulting, Rohit co-founded his security practice to deliver clarity in an increasingly complex threat landscape. He believes effective security goes beyond tools and scans—focusing on actionable intelligence, practical remediation, and long-term security maturity.
+           </p>
+           <div style="display: flex; gap: 30px;">
+             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
+               <h4 style="margin: 0; font-size: 1.2rem;">7+ Years</h4>
+               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Cyber security</p>
+             </div>
+           </div>
+        </div>
+      </div>
+
+        <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
+        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px;">
+           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Kishore</h3>
+           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">IOS developer</p>
+           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
+             iOS specialist with deep expertise in backend engineering and scalable system design. Designed, developed, and deployed high-impact applications and SDKs across the Apple ecosystem, delivering secure, cloud-native solutions that drive business growth.
+           </p>
+           <div style="display: flex; gap: 30px;">
+             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
+               <h4 style="margin: 0; font-size: 1.2rem;">10+ Years</h4>
+               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Cyber security</p>
+             </div>
+           </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 40px;">
+      <div class="dot" onclick="moveSlide(0)" style="width: 30px; height: 4px; border-radius: 2px; background: var(--accent-blue); cursor: pointer; transition: 0.3s;"></div>
+      <div class="dot" onclick="moveSlide(1)" style="width: 30px; height: 4px; border-radius: 2px; background: #30363d; cursor: pointer; transition: 0.3s;"></div>
+      <div class="dot" onclick="moveSlide(2)" style="width: 30px; height: 4px; border-radius: 2px; background: #30363d; cursor: pointer; transition: 0.3s;"></div>
+      <div class="dot" onclick="moveSlide(3)" style="width: 30px; height: 4px; border-radius: 2px; background: #30363d; cursor: pointer; transition: 0.3s;"></div>
+    </div>
+  </div>
+</section>
 
   <section id="contact" class="section" style="text-align: center;">
     <div style="max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 50px; border-radius: 20px; border: 1px solid #30363d;">

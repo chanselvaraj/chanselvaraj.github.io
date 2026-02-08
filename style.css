@@ -180,3 +180,10 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+.dot {
+  opacity: 0.5;
+}
+.dot:hover {
+  opacity: 1;
+}
