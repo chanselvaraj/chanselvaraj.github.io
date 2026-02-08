@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", type);
 let currentLeaderIndex = 0;
 const track = document.getElementById('leader-track');
 const dots = document.querySelectorAll('.dot');
-const totalLeaders = 3;
+const totalLeaders = 4;
 
 let autoSlideInterval;
 
