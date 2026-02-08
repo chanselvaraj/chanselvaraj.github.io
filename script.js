@@ -24,13 +24,13 @@ if (isDeleting) {
   typeSpeed = 150;
 }
 
-// This prevents the height collapse
+// Keep the &nbsp; to prevent the "line jumping up" issue
 const currentDisplay = currentWord.substring(0, charIndex);
 textElement.innerHTML = currentDisplay || "&nbsp;";
 
 if (!isDeleting && charIndex === currentWord.length) {
   isDeleting = true;
-  typeSpeed = 2000; // Wait at the end
+  typeSpeed = 2000;
   textElement.classList.add('cursor-blink');
 } else if (isDeleting && charIndex === 0) {
   isDeleting = false;
@@ -38,15 +38,12 @@ if (!isDeleting && charIndex === currentWord.length) {
   typeSpeed = 500;
   textElement.classList.add('cursor-blink');
 } else {
-  // Remove blink while active typing
   textElement.classList.remove('cursor-blink');
 }
 
 setTimeout(type, typeSpeed);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-type();
-});
+document.addEventListener("DOMContentLoaded", type);
 
 

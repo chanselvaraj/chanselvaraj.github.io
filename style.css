@@ -18,11 +18,12 @@ body {
 }
 
 #typewriter {
-  border-right: 3px solid var(--accent-blue);
+  /* Changed from border-right to border-left */
+  border-left: 3px solid var(--accent-blue);
   white-space: nowrap;
+  transition: min-width 0.1s; /* Smooths out any micro-stutters */
 }
 
-/* This keeps the cursor blinking even when no text is present */
 .cursor-blink {
   animation: blink 0.7s infinite;
 }
