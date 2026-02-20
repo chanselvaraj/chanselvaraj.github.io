@@ -84,13 +84,13 @@ const posts = [
     file: "blog/AI_Generated_Engineer_Refined.txt",
     preview: "Exploring the best practices in todays AI led software development..."
   },
-//  {
-//    id: 'post2',
-//    title: "AI Implementation in Python",
-//    date: "Feb 15, 2026 | 02:30 PM",
-//    file: "ai-python.txt",
-//    preview: "A deep dive into building scalable AI workflows using modern Python libraries..."
-//  },
+  {
+    id: 'post2',
+    title: "The 'Cloud-Hopper' Manual",
+    date: "Feb 20, 2026 | 09:30 PM",
+    file: "blog/cloud_hopper_manual",
+    preview: "A deep dive into digitizing assets and building portable architectures..."
+  },
 //  {
 //    id: 'post2',
 //    title: "AI Implementation in Python",
