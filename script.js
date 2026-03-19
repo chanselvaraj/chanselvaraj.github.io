@@ -91,13 +91,13 @@ const posts = [
     file: "blog/cloud_hopper_manual",
     preview: "A deep dive into digitizing assets and building portable architectures..."
   },
-//  {
-//    id: 'post2',
-//    title: "AI Implementation in Python",
-//    date: "Feb 15, 2026 | 02:30 PM",
-//    file: "ai-python.txt",
-//    preview: "A deep dive into building scalable AI workflows using modern Python libraries..."
-//  },
+ {
+   id: 'post3',
+   title: "Building a Virtual Developer with MCP",
+   date: "Mar 19, 2026 | 08:30 PM",
+   file: "blog/Building_Virtual_Developer_with_MCP",
+   preview: "A deep dive into building scalable AI workflows using modern Python libraries..."
+ },
 //  {
 //    id: 'post2',
 //    title: "AI Implementation in Python",
