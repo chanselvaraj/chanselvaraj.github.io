@@ -109,25 +109,32 @@ function initTeamPhotoScroll() {
    ============================================================= */
 const posts = [
   {
-    id: 'post1',
+    id: 'AI_Generated_Engineer_Refined',
     title: 'AI Generated. Engineer Refined!',
     date: 'Feb 18, 2026',
     file: 'blog/AI_Generated_Engineer_Refined.txt',
     preview: "Exploring the best practices in today's AI-led software development and how engineers are evolving.",
   },
   {
-    id: 'post2',
+    id: 'cloud_hopper_manual',
     title: "The 'Cloud-Hopper' Manual",
     date: 'Feb 20, 2026',
     file: 'blog/cloud_hopper_manual',
     preview: 'A deep dive into digitizing assets and building portable architectures that survive multi-cloud migrations.',
   },
   {
-    id: 'post3',
+    id: 'Building_Virtual_Developer_with_MCP',
     title: 'Building a Virtual Developer with MCP',
     date: 'Mar 19, 2026',
     file: 'blog/Building_Virtual_Developer_with_MCP',
     preview: 'How Model Context Protocol unlocks autonomous AI agents that connect directly to your databases and tools.',
+  },
+  {
+    id: 'AI_First_Thinking',
+    title: 'Why AI-First Thinking Is No Longer Optional — And How to Start Without Burning Budget',
+    date: 'Apr 25, 2026',
+    file: 'blog/AI_First_Thinking',
+    preview: 'Why AI-First Thinking Is No Longer Optional — And How to Start Without Burning Budget.',
   },
 ];
 
