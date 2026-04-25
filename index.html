@@ -3,205 +3,370 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KovaiLabs | Elite Offshore Engineering</title>
+  <title>KovaiLabs | AI Development from India — POCs, Projects &amp; More</title>
+  <meta name="description" content="KovaiLabs is a developer team based in India. We help you build AI POCs, short-term spikes, and longer engagements across finance, insurance, e-commerce, and education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    /* Inline overrides to ensure the new professional look without breaking your style.css hooks */
-    :root {
-      --bg-dark: #0a0c10;
-      --card-bg: #161b22;
-      --accent-blue: #2f81f7;
-      --text-main: #f0f6fc;
-      --text-dim: #8b949e;
-    }
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      margin: 0;
-    }
-    .section { padding: 80px 10%; }
-    .hero { background: radial-gradient(circle at top right, #1d2b41, #0a0c10); border-bottom: 1px solid #30363d; }
-    .card { background: var(--card-bg); border: 1px solid #30363d; border-radius: 12px; transition: 0.3s; }
-    .card:hover { border-color: var(--accent-blue); transform: translateY(-5px); }
-    .primary-btn { background: var(--accent-blue); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; }
-    input, textarea { background: #0d1117; border: 1px solid #30363d; color: white; padding: 12px; border-radius: 6px; margin-bottom: 15px; width: 100%; }
-    h1, h2, h3 { color: #ffffff; letter-spacing: -0.02em; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav style="display: flex; justify-content: space-between; padding: 20px 10%; align-items: center; border-bottom: 1px solid #30363d; background: rgba(10, 12, 16, 0.8); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100;">
-    <div style="font-weight: 800; font-size: 1.4rem;">Kovai<span style="color: var(--accent-blue);">Labs</span></div>
-    <div style="display: flex; gap: 25px; font-size: 0.9rem;">
-      <a href="#expertise" style="color: var(--text-dim); text-decoration: none;">Expertise</a>
-      <a href="#leadership" style="color: var(--text-dim); text-decoration: none;">Leadership</a>
-<!--      <a href="#contact" style="color: var(&#45;&#45;accent-blue); text-decoration: none; font-weight: 600;">Hire Talent</a>-->
-        <a href="blog.html" style="color: var(--text-dim); text-decoration: none;">Blog</a>
-      <a href="#contact" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Train your team</a>
-    </div>
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">Kovai<span>Labs</span></a>
+    <ul class="nav-links">
+      <li><a href="#domains">Domains</a></li>
+      <li><a href="#how">How We Work</a></li>
+      <li><a href="#stack">AI Stack</a></li>
+      <li><a href="#leadership">Team</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+    </ul>
   </nav>
 
-  <section class="hero" style="text-align: center; padding: 150px 5% 100px; background: radial-gradient(circle at center, #161b22 0%, #0a0c10 100%);">
-  <div style="max-width: 1100px; margin: 0 auto;">
-
-    <div style="display: inline-block; padding: 6px 16px; background: rgba(47, 129, 247, 0.1); color: var(--accent-blue); border: 1px solid rgba(47, 129, 247, 0.3); border-radius: 100px; font-size: 0.85rem; font-weight: 600; margin-bottom: 30px; letter-spacing: 1px;">
-      WORLD-CLASS OFFSHORE ENGINEERING
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
     </div>
+    <div class="hero-content">
 
-    <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.2; margin-bottom: 30px; font-weight: 800; letter-spacing: -0.04em; text-align: center;">
-      <span id="typewriter" style="color: var(--accent-blue); display: inline-block; min-width: 140px; text-align: left; vertical-align: bottom; padding-left: 8px;">Build</span>
-      <span>your software Engineering team in India.</span>
-    </h1>
-
-    <p style="color: var(--text-dim); font-size: clamp(1.1rem, 2vw, 1.4rem); max-width: 900px; margin: 0 auto 50px; line-height: 1.6;">
-      Expand your technical team with developers specializing in Python, Big Data, and Cloud Architecture—integrated seamlessly into your workflow.
-    </p>
-
-    <div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
-      <a href="#contact" class="primary-btn" style="padding: 16px 40px; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(47, 129, 247, 0.2);">
-        Start Hiring Now
-      </a>
-      <a href="#expertise" style="color: white; border: 1px solid #30363d; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.borderColor='#8b949e'" onmouseout="this.style.borderColor='#30363d'">
-        Explore Expertise
-      </a>
-    </div>
-
-  </div>
-  </section>
-
-  <section id="expertise" class="section">
-    <h2 style="text-align: center; margin-bottom: 50px;">Our Specialized Units</h2>
-    <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-      <div class="card" style="padding: 30px;">
-        <h3 style="color: var(--accent-blue);">Digital Transformation</h3>
-        <p style="color: var(--text-dim);">End-to-end digital journey covering legacy modernization, system redesign, application development, and seamless integration—driving measurable business outcomes through technology.</p>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        AI Offshoring &middot; Based in India
       </div>
-      <div class="card" style="padding: 30px;">
-        <h3 style="color: var(--accent-blue);">AI first development</h3>
-        <p style="color: var(--text-dim);">Design and development of intelligent applications using Python, Java, and C#, including data-driven systems, automation, and AI-enabled workflows tailored to business needs.</p>
+
+      <h1>
+        <span class="hero-typewriter-line">
+          <span id="typewriter">Build.</span>
+        </span>
+        <span class="hero-h1-sub">Your AI team in India.</span>
+      </h1>
+
+      <p>
+        We're a developer team in India that helps you move on AI — whether it's a quick POC to validate an idea, a short project spike, or a longer engagement. Finance, insurance, e-commerce, or education.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Let's Talk &rarr;</a>
+        <a href="#domains" class="btn-secondary">See What We Do</a>
       </div>
-      <div class="card" style="padding: 30px;">
-        <h3 style="color: var(--accent-blue);">Cloud Engineering</h3>
-        <p style="color: var(--text-dim);">Cloud-first engineering services covering architecture, migration, and optimization on AWS, Azure, and Google Cloud Platform, ensuring scalability, security, and operational efficiency.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="leadership" class="section" style="background: #0d1117; position: relative; overflow: hidden; padding-top: 100px; padding-bottom: 100px;">
-
-  <div style="position: absolute; top: 0; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-blue), transparent); opacity: 0.5;"></div>
-  <div style="position: absolute; bottom: 0; left: 10%; right: 10%; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-blue), transparent); opacity: 0.5;"></div>
-
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(47, 129, 247, 0.05) 0%, transparent 70%); pointer-events: none;"></div>
-
-  <div style="text-align: center; margin-bottom: 40px; position: relative; z-index: 1;">
-    <h2 style="font-size: 2.5rem; margin-bottom: 10px;">The Team</h2>
-    <div style="width: 40px; height: 2px; background: var(--accent-blue); margin: 0 auto;"></div>
-  </div>
-
-  <div class="slider-container" style="max-width: 800px; margin: 0 auto; position: relative; z-index: 1;">
-    <div id="leader-track" style="display: flex; transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer;">
-
-      <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
-        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Selvaraj</h3>
-           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Founder & CTO</p>
-           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
-             With deep expertise in full-stack engineering, data systems, and large-scale digital transformation, Selvaraj founded KovaiLabs to bridge global technology needs with India’s elite talent. Leveraging hands-on leadership across AWS, Azure, GCP, and Python/.NET ecosystems, he drives architecture, delivery excellence, and ensures every engagement creates long-term strategic value for clients.
-           </p>
-           <div style="display: flex; gap: 30px;">
-             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
-               <h4 style="margin: 0; font-size: 1.2rem;">10+ Years</h4>
-               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Engineering Leadership</p>
-             </div>
-           </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num">4</span>
+          <span class="label">Focus Domains</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">POC</span>
+          <span class="label">to Production</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">10+</span>
+          <span class="label">Years Engineering</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">Any</span>
+          <span class="label">Project Size</span>
         </div>
       </div>
 
-      <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
-        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px;">
-           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Anand Pulakala</h3>
-           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Product Engineering Head</p>
-           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
-             Golang backend expert building mission-critical microservices and cloud-native platforms at scale, Focused on performance, reliability, and systems that power real business outcomes.
-           </p>
-           <div style="display: flex; gap: 30px;">
-             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
-               <h4 style="margin: 0; font-size: 1.2rem;">9+ Years</h4>
-               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">System Architecture</p>
-             </div>
-           </div>
-        </div>
-      </div>
-
-        <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
-        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px;">
-           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Rohit</h3>
-           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Cyber security expert</p>
-           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
-             Backed by 7+ years of experience in penetration testing and cybersecurity consulting, Rohit co-founded his security practice to deliver clarity in an increasingly complex threat landscape. He believes effective security goes beyond tools and scans—focusing on actionable intelligence, practical remediation, and long-term security maturity.
-           </p>
-           <div style="display: flex; gap: 30px;">
-             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
-               <h4 style="margin: 0; font-size: 1.2rem;">7+ Years</h4>
-               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Cyber security</p>
-             </div>
-           </div>
-        </div>
-      </div>
-
-        <div class="leader-slide" style="min-width: 100%; box-sizing: border-box; padding: 0 20px;">
-        <div class="card" style="padding: 50px; border: 1px solid rgba(48, 54, 61, 0.8); background: rgba(22, 27, 34, 0.6); backdrop-filter: blur(8px); border-radius: 20px;">
-           <h3 style="color: var(--accent-blue); margin-bottom: 5px; font-size: 1.8rem;">Kishore</h3>
-           <p style="font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">IOS development Head</p>
-           <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 30px; font-size: 1.1rem; font-weight: 300;">
-             iOS specialist with deep expertise in backend engineering and scalable system design. Designed, developed, and deployed high-impact applications and SDKs across the Apple ecosystem, delivering secure, cloud-native solutions that drive business growth.
-           </p>
-           <div style="display: flex; gap: 30px;">
-             <div style="border-left: 3px solid var(--accent-blue); padding-left: 15px;">
-               <h4 style="margin: 0; font-size: 1.2rem;">10+ Years</h4>
-               <p style="margin: 0; font-size: 0.8rem; color: var(--text-dim);">Cyber security</p>
-             </div>
-           </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 40px;">
-      <div class="dot" onclick="moveSlide(0)" style="width: 30px; height: 4px; border-radius: 2px; background: var(--accent-blue); cursor: pointer; transition: 0.3s;"></div>
-      <div class="dot" onclick="moveSlide(1)" style="width: 30px; height: 4px; border-radius: 2px; background: #30363d; cursor: pointer; transition: 0.3s;"></div>
-      <div class="dot" onclick="moveSlide(2)" style="width: 30px; height: 4px; border-radius: 2px; background: #30363d; cursor: pointer; transition: 0.3s;"></div>
-      <div class="dot" onclick="moveSlide(3)" style="width: 30px; height: 4px; border-radius: 2px; background: #30363d; cursor: pointer; transition: 0.3s;"></div>
-    </div>
-  </div>
-</section>
-
-  <section id="contact" class="section" style="text-align: center;">
-    <div style="max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 50px; border-radius: 20px; border: 1px solid #30363d;">
-      <h2>Scale Your Operations</h2>
-      <p style="color: var(--text-dim); margin-bottom: 30px;">Submit your requirements and our team will get back to you within 24 hours.</p>
-
-      <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLSeARInYYkX32tboWOjIXJnEuF7aGbxxlkUeNnk34bEppCYWFw/formResponse"
-        method="POST"
-        target="hidden_iframe"
-        onsubmit="handleSubmit(event)"
-      >
-        <input type="text" name="entry.1018281034" placeholder="Your Full Name" required />
-        <input type="text" name="entry.1601816784" placeholder="Corporate Email" required />
-        <textarea name="entry.2118176158" placeholder="Tell us about the roles you need to fill..."></textarea>
-        <button type="submit" class="primary-btn" style="width: 100%; border: none; cursor: pointer; padding: 15px;">Inquire Now</button>
-      </form>
     </div>
   </section>
 
-  <iframe name="hidden_iframe" style="display:none;"></iframe>
+  <!-- WHAT WE OFFER -->
+  <section class="section-full gap-section">
+    <div class="section">
+      <div class="section-header reveal">
+        <div class="section-label">What We Offer</div>
+        <h2>Practical AI help, <span class="gradient-text">no fluff.</span></h2>
+        <p>We're developers, not a consulting firm. We get involved in your AI work — small or large — and help you move forward.</p>
+      </div>
+      <div class="gap-grid reveal">
+        <div class="gap-item">
+          <div class="gap-icon gap-icon--blue">🔬</div>
+          <h3>POCs &amp; prototypes</h3>
+          <p>Got an AI idea you want to validate? We'll build a working prototype quickly so you can see if it's worth pursuing — before committing to a full build.</p>
+        </div>
+        <div class="gap-item">
+          <div class="gap-icon gap-icon--amber">🛠️</div>
+          <h3>Short or long projects</h3>
+          <p>Need a few weeks of focused AI development, or a longer engagement? We're flexible — we work around your timeline and scope, not the other way around.</p>
+        </div>
+        <div class="gap-item">
+          <div class="gap-icon gap-icon--violet">🤝</div>
+          <h3>Work alongside your team</h3>
+          <p>We're happy to plug into an existing team, pick up scoped tasks, or work independently on a module. Low overhead, clear communication, based in India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer style="padding: 40px; text-align: center; color: var(--text-dim); font-size: 0.8rem; border-top: 1px solid #30363d;">
-    © 2026 KovaiLabs Engineering. All Rights Reserved.
+  <!-- DOMAIN USE CASES -->
+  <section id="domains" class="section">
+    <div class="section-header reveal">
+      <div class="section-label">Where We Focus</div>
+      <h2>Four domains we <span class="gradient-text">know well.</span></h2>
+      <p>We've spent time in these spaces — enough to understand the real problems, not just the surface ones. That said, we're always open to a good challenge outside them too.</p>
+    </div>
+    <div class="carousel-wrap">
+      <button class="carousel-btn carousel-btn-prev" data-target="domain-grid" aria-label="Previous">&larr;</button>
+      <div class="domain-grid" id="domain-grid">
+
+        <div class="domain-card reveal">
+          <div class="domain-card-inner">
+            <div class="domain-icon">🏦</div>
+            <div>
+              <h3>Financial Services</h3>
+              <p>Document parsing, transaction categorization, fraud signal pipelines. Good for POCs that test whether AI can replace a manual step before you commit to a bigger build.</p>
+            </div>
+          </div>
+          <div class="domain-tags">
+            <span class="tag">Doc Parsing</span>
+            <span class="tag">Fraud Signals</span>
+            <span class="tag">KYC</span>
+            <span class="tag">Data Extraction</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-card-inner">
+            <div class="domain-icon">🛡️</div>
+            <div>
+              <h3>Insurance</h3>
+              <p>Claims data, policy documents, and repetitive triage are a natural fit for AI. We help you scope what's realistic and build a working version fast.</p>
+            </div>
+          </div>
+          <div class="domain-tags">
+            <span class="tag">Claims Triage</span>
+            <span class="tag">Policy Extraction</span>
+            <span class="tag">Risk</span>
+            <span class="tag">Churn</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-card-inner">
+            <div class="domain-icon">🛒</div>
+            <div>
+              <h3>E-Commerce</h3>
+              <p>Search, recommendations, support bots — AI adds value here without needing a huge team. We build focused modules that slot into your existing platform.</p>
+            </div>
+          </div>
+          <div class="domain-tags">
+            <span class="tag">AI Search</span>
+            <span class="tag">Recommendations</span>
+            <span class="tag">Support Bots</span>
+            <span class="tag">Reviews</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-card-inner">
+            <div class="domain-icon">🎓</div>
+            <div>
+              <h3>Education</h3>
+              <p>Quiz generators, content summaries, student feedback tools — education has plenty of repetitive tasks AI handles well. Great space for quick POC wins.</p>
+            </div>
+          </div>
+          <div class="domain-tags">
+            <span class="tag">Summaries</span>
+            <span class="tag">Quiz Gen</span>
+            <span class="tag">Feedback</span>
+            <span class="tag">Lesson AI</span>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-btn carousel-btn-next" data-target="domain-grid" aria-label="Next">&rarr;</button>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section-full how-bg">
+    <div class="section" id="how">
+      <div class="section-header reveal">
+        <div class="section-label">How It Works</div>
+        <h2>Simple process, <span class="gradient-text">no surprises.</span></h2>
+        <p>We keep it straightforward. No long onboarding. No big process overhead. Just get talking, agree on scope, and start.</p>
+      </div>
+      <div class="steps-grid reveal">
+        <div class="step">
+          <span class="step-number">01</span>
+          <h3>Tell us what you're thinking</h3>
+          <p>Share the idea, the problem, or even just a rough direction. We'll ask a few questions to understand what you actually need — and whether AI is even the right tool for it.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">02</span>
+          <h3>Agree on scope</h3>
+          <p>We keep scope realistic. A POC, a specific feature, a short engagement — we'll agree on what's being built, how long it takes, and what done looks like.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">03</span>
+          <h3>Build and iterate</h3>
+          <p>We start building and share progress regularly. If something needs to change mid-way, that's fine — we stay in sync and adjust without drama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI STACK -->
+  <section id="stack" class="section">
+    <div class="section-header reveal">
+      <div class="section-label">Technology</div>
+      <h2>The <span class="gradient-text">AI stack</span> we build on</h2>
+      <p>Battle-tested tools across models, orchestration, retrieval, and infrastructure — chosen for production reliability, not hype.</p>
+    </div>
+    <div class="stack-grid reveal">
+      <span class="stack-badge"><span class="stack-dot"></span>Claude (Anthropic)</span>
+      <span class="stack-badge"><span class="stack-dot"></span>GPT-4o / OpenAI</span>
+      <span class="stack-badge"><span class="stack-dot"></span>LangChain</span>
+      <span class="stack-badge"><span class="stack-dot"></span>LlamaIndex</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Model Context Protocol</span>
+      <span class="stack-badge"><span class="stack-dot"></span>RAG Pipelines</span>
+      <span class="stack-badge"><span class="stack-dot"></span>pgvector / Pinecone</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Weaviate</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Python / FastAPI</span>
+      <span class="stack-badge"><span class="stack-dot"></span>AWS Bedrock</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Azure OpenAI</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Vertex AI</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Docker / Kubernetes</span>
+      <span class="stack-badge"><span class="stack-dot"></span>Apache Kafka</span>
+      <span class="stack-badge"><span class="stack-dot"></span>dbt / Spark</span>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section-full leadership-bg" id="leadership">
+    <div class="team-photo-scroll" id="team-photo-scroll" aria-hidden="true"></div>
+    <div class="section">
+      <div class="section-header reveal">
+        <div class="section-label">The Team</div>
+        <h2>The people <span class="gradient-text">behind the work</span></h2>
+        <p>A small team of engineers based in India with experience across full-stack, AI, cloud, and security. We like building things that actually get used.</p>
+      </div>
+
+      <div class="carousel-wrap">
+        <button class="carousel-btn carousel-btn-prev" data-target="team-grid" aria-label="Previous">&larr;</button>
+        <div class="team-grid reveal" id="team-grid">
+
+          <div class="team-card">
+            <div class="team-card-top">
+              <div class="team-avatar">S</div>
+              <div>
+                <div class="team-name">Selvaraj</div>
+                <div class="team-role">Founder &amp; CTO</div>
+              </div>
+            </div>
+            <p class="team-bio">Full-stack engineer and data systems architect with 10+ years leading digital transformation. Founded KovaiLabs to bring serious engineering talent to AI-focused work across global clients.</p>
+            <div class="team-footer">
+              <span class="team-stat-pill">10+ yrs</span>
+              <span class="team-stat-pill">AWS · Azure · GCP</span>
+              <span class="team-stat-pill">Python · .NET</span>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-top">
+              <div class="team-avatar">A</div>
+              <div>
+                <div class="team-name">Anand Pulakala</div>
+                <div class="team-role">Product Engineering Head</div>
+              </div>
+            </div>
+            <p class="team-bio">Golang backend specialist building high-throughput microservices and cloud-native platforms. Focused on systems that are fast, reliable, and built to last under real-world load.</p>
+            <div class="team-footer">
+              <span class="team-stat-pill">9+ yrs</span>
+              <span class="team-stat-pill">Golang</span>
+              <span class="team-stat-pill">Microservices</span>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-top">
+              <div class="team-avatar">R</div>
+              <div>
+                <div class="team-name">Rohit</div>
+                <div class="team-role">Cybersecurity Expert</div>
+              </div>
+            </div>
+            <p class="team-bio">7+ years in penetration testing and security consulting. Brings security-first thinking to every AI build — from data handling to API exposure — so clients aren't surprised post-launch.</p>
+            <div class="team-footer">
+              <span class="team-stat-pill">7+ yrs</span>
+              <span class="team-stat-pill">Pen Testing</span>
+              <span class="team-stat-pill">AI Security</span>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-top">
+              <div class="team-avatar">K</div>
+              <div>
+                <div class="team-name">Kishore</div>
+                <div class="team-role">iOS &amp; Platform Head</div>
+              </div>
+            </div>
+            <p class="team-bio">iOS engineer with a strong backend foundation. Shipped production apps and SDKs across the Apple ecosystem, with a focus on scalable, cloud-native architecture underneath.</p>
+            <div class="team-footer">
+              <span class="team-stat-pill">10+ yrs</span>
+              <span class="team-stat-pill">iOS · Swift</span>
+              <span class="team-stat-pill">Cloud-Native</span>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-btn carousel-btn-next" data-target="team-grid" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="section">
+    <div class="section-header reveal">
+      <div class="section-label">Insights</div>
+      <h2>From the <span class="gradient-text">KovaiLabs</span> blog</h2>
+      <p>Deep dives on AI implementation, domain engineering, and what's actually working in production.</p>
+    </div>
+    <div class="blog-grid" id="home-blog-grid"></div>
+    <div class="blog-cta-wrap">
+      <a href="blog.html" class="btn-secondary">All Articles &rarr;</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section-full contact-bg" id="contact">
+    <div class="section">
+      <div class="contact-inner">
+        <div class="section-header reveal">
+          <div class="section-label">Get Started</div>
+          <h2>Got an AI idea? <span class="gradient-text">Let's talk.</span></h2>
+          <p>POC, project, or just an early conversation — drop us a message and we'll get back to you.</p>
+        </div>
+        <div class="contact-form-box reveal">
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeARInYYkX32tboWOjIXJnEuF7aGbxxlkUeNnk34bEppCYWFw/formResponse"
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="handleSubmit(event)"
+          >
+            <input type="text" name="entry.1018281034" placeholder="Your full name" required />
+            <input type="email" name="entry.1601816784" placeholder="Work email" required />
+            <textarea name="entry.2118176158" placeholder="Tell us what you're thinking — an idea, a problem, a use case. Short or long, early stage or in-progress, all fine."></textarea>
+            <button type="submit" class="btn-primary btn-block">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <iframe name="hidden_iframe" style="display:none;" title="Form submission target"></iframe>
+
+  <footer>
+    &copy; 2026 KovaiLabs &mdash; AI Development from India. All Rights Reserved.
   </footer>
 
   <script src="script.js"></script>
