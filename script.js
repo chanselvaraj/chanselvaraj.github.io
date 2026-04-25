@@ -76,10 +76,10 @@ function initCarousel(id) {
    images/team/. The strip will auto-loop seamlessly.
    ============================================================= */
 const teamImages = [
-  // 'images/team/selvaraj.jpg',
-  // 'images/team/anand.jpg',
-  // 'images/team/rohit.jpg',
-  // 'images/team/kishore.jpg',
+   'images/team/sample.jpg',
+   'images/team/sample1.jpg',
+   'images/team/sample2.jpg',
+   'images/team/sample3.jpg',
 ];
 
 function initTeamPhotoScroll() {
